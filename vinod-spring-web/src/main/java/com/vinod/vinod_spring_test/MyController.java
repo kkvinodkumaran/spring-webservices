@@ -6,6 +6,7 @@ import org.springframework.web.bind.annotation.RequestMethod;
 
 @Controller
 public class MyController {
+	
 	@RequestMapping(value = "/helloworld", method = RequestMethod.GET)
 	public String getHelloworld() {
 		return "redirect:NewFile.html";
