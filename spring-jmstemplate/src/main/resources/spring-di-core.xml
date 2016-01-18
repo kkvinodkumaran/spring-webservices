@@ -1,0 +1,21 @@
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans
+http://www.springframework.org/schema/beans/spring-beans-2.5.xsd">
+	
+	<bean id="carInsurance" class="com.vinod.test.CarInsurance">
+		<property name="name" value="Progressive" />
+		<property name="policyDetails" value="Full cover" />
+	</bean>
+	
+	<!-- Setter based dependency injection -->
+	<bean id="carOrder" class="com.vinod.test.CarOrder">
+			<property name="carInsurance" ref="carInsurance" />	
+	</bean>
+	
+	<!-- Constructor based dependency injection -->
+	<bean id="carOrder1" class="com.vinod.test.CarOrder">
+		      <constructor-arg ref="carInsurance" />
+
+	</bean>
+</beans> 	

@@ -1,0 +1,19 @@
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans
+http://www.springframework.org/schema/beans/spring-beans-2.5.xsd">
+
+	<!-- Setter based dependency injection -->
+	<!-- Here car order is the parent class and injecting the car insurance 
+		bean as property and doing the car insurance bean creation there itself -->
+	<bean id="carOrder" class="com.vinod.test.CarOrder">
+
+		<property name="carInsurance">
+			<bean id="carInsurance" class="com.vinod.test.CarInsurance">
+				<property name="name" value="Progressive" />
+				<property name="policyDetails" value="Full cover" />
+			</bean>
+		</property>
+	</bean>
+
+</beans> 	
