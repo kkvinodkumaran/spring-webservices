@@ -1,0 +1,21 @@
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans
+http://www.springframework.org/schema/beans/spring-beans-2.5.xsd">
+	
+	<!-- Car insurance bean -->
+	<bean id="carInsurance" class="com.vinod.test.CarInsurance">
+		<property name="name" value="Progressive" />
+		<property name="policyDetails" value="Full cover" />
+	</bean>
+	
+	<!-- Autowiring by name -->
+	<bean id="carOrder" class="com.vinod.test.CarOrder" autowire="byName">
+	</bean>
+	
+	<!-- Autowiring by constructor -->
+	<bean id="carOrder1" class="com.vinod.test.CarOrder"  autowire="constructor">
+	</bean>
+	
+	
+</beans> 	
