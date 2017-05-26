@@ -22,6 +22,12 @@ import org.springframework.kafka.listener.ConcurrentMessageListenerContainer;
 
 import com.vinod.test.service.impl.Listener;
 
+/**
+ * @author vinodkariyathungalkumaran
+ * 
+ * Before starting this application need to start the zookeeper and kafka
+ *
+ */
 @Configuration
 @ComponentScan({ "com.vinod.test" })
 @EnableKafka

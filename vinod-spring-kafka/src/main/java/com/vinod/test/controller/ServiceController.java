@@ -12,6 +12,10 @@ import org.springframework.web.bind.annotation.RestController;
 import com.vinod.test.model.Customer;
 import com.vinod.test.service.ServiceProvider;
 
+/**
+ * @author vinodkariyathungalkumaran
+ *
+ */
 @RestController
 public class ServiceController {
 	private static final Logger logger = LoggerFactory.getLogger(ServiceController.class);

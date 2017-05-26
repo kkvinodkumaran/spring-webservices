@@ -1,5 +1,9 @@
 package com.vinod.test.model;
 
+/**
+ * @author vinodkariyathungalkumaran
+ *
+ */
 public class Customer {
 	private String name;
 	private String address;

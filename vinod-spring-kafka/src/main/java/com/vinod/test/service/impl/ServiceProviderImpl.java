@@ -12,6 +12,10 @@ import com.google.gson.Gson;
 import com.vinod.test.model.Customer;
 import com.vinod.test.service.ServiceProvider;
 
+/**
+ * @author vinodkariyathungalkumaran
+ *
+ */
 @Service
 public class ServiceProviderImpl implements ServiceProvider {
 	private static final Logger logger = LoggerFactory.getLogger(ServiceProviderImpl.class);
