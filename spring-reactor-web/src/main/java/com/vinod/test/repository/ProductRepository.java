@@ -12,9 +12,15 @@ import reactor.core.publisher.Flux;
 @Repository
 public class ProductRepository {
 
+	/**
+	 * @return
+	 */
 	public Product getProduct() {
 		return new Product("Phone", "Nokia3310", "2000", "2019");
 	}
+	/**
+	 * @return
+	 */
 	public Flux<Product> getAllProducts() {
 		List<Product> list = new ArrayList<>();
 		list.add(new Product("Phone", "Nokia3310", "2000", "2019"));

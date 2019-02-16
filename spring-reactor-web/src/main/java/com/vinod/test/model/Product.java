@@ -1,8 +1,18 @@
 package com.vinod.test.model;
 
+/**
+ * @author vinodkariyathungalkumaran
+ *
+ */
 public class Product {
 
 	
+	/**
+	 * @param name
+	 * @param description
+	 * @param price
+	 * @param yearOfManufacturing
+	 */
 	public Product(String name, String description, String price, String yearOfManufacturing) {
 		super();
 		this.name = name;

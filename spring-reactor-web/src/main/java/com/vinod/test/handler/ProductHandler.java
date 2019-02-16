@@ -19,10 +19,18 @@ public class ProductHandler {
 	@Autowired
 	 private  ProductRepository repository;
 	 
+	/**
+	 * @param request
+	 * @return
+	 */
 	public Mono<ServerResponse> getProduct(ServerRequest request) {
 		return ServerResponse.ok().contentType(MediaType.APPLICATION_JSON)
 			.body(BodyInserters.fromObject(repository.getProduct()));
 	}
+	/**
+	 * @param request
+	 * @return
+	 */
 	public Mono<ServerResponse> getAllProducts(ServerRequest request) {
 		Flux<Product> productList=repository.getAllProducts();
 		System.out.println(productList);
